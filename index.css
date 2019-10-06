@@ -64,7 +64,7 @@
       .nav{
         grid-area:hd;
         display: grid;
-        grid-template-columns: 30% 10% 10% 10% 10% 10% 10%;
+        grid-template-columns: 30% 10% 10% 10% 10% 30%;
       }
     
       .sidebar{
@@ -83,7 +83,15 @@
       .footer{
         grid-area: ft;  
         display: grid;
-        grid-template-columns: 30% 10% 10% 10% 10% 10% 10%;
+        grid-template-columns: 30% 10% 10% 10% 10% 30%;
+      }
+
+      .navbar{
+          text-align: center;
+      }
+
+      .language{
+          text-align: right;
       }
   }
   
@@ -110,7 +118,7 @@
       .nav{
         grid-area:hd;
         display: grid;
-        grid-template-columns: 30% 10% 10% 10% 10% 10% 10%;
+        grid-template-columns: 30% 10% 10% 10% 10% 30%;
       }
     
       .sidebar{
@@ -130,6 +138,14 @@
       .footer{
         grid-area: ft;  
         display: grid;
-        grid-template-columns: 30% 10% 10% 10% 10% 10% 10%;
+        grid-template-columns: 30% 10% 10% 10% 10% 30%;
       }
+
+      .navbar{
+        text-align: center;
+    }
+
+    .language{
+        text-align: right;
+    }
   }
