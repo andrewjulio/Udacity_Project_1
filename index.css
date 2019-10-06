@@ -9,7 +9,7 @@
         "main main main main main main main main"
         "ft ft ft ft ft ft ft ft";
         border: 2px solid yellow;
-        font-size: 0.6em;
+        font-size: 0.8em;
     }
 
     .box{
@@ -90,7 +90,7 @@
           text-align: center;
       }
 
-      .language{
+      .end{
           text-align: right;
       }
   }
@@ -145,7 +145,7 @@
         text-align: center;
     }
 
-    .language{
+    .end{
         text-align: right;
     }
   }
