@@ -86,12 +86,19 @@
         grid-template-columns: 30% 10% 10% 10% 10% 30%;
       }
 
+      .logo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    
       .navbar{
           text-align: center;
       }
 
       .end{
-          text-align: right;
+          text-align: center;
       }
   }
   
@@ -141,11 +148,18 @@
         grid-template-columns: 30% 10% 10% 10% 10% 30%;
       }
 
+      .logo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+
       .navbar{
         text-align: center;
     }
 
     .end{
-        text-align: right;
+        text-align: center;
     }
   }
