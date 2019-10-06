@@ -9,7 +9,7 @@
         "main main main main main main main main"
         "ft ft ft ft ft ft ft ft";
         border: 2px solid yellow;
-        font-size: 0.8em;
+        font-size: 0.6em;
     }
 
     .box{
@@ -32,6 +32,10 @@
         grid-template-rows: 50% 50%;
     }
 
+    .sidebar2{
+        display: none;  
+      }
+
     .footer{
         grid-area: ft;  
     }
@@ -45,10 +49,10 @@
         grid-template-rows: 100px 600px 100px;
         grid-template-areas: 
         "hd hd hd hd hd hd hd hd"
-        "sd sd main main main main main main"
+        "sd sd main main main main main sd2"
         "ft ft ft ft ft ft ft ft";
         border: 2px solid yellow;
-        font-size: 0.9em;
+        font-size: 0.7em;
     }
 
     .box{
@@ -72,7 +76,10 @@
         display: grid;
         grid-template-columns: 50% 50%;
       }
-    
+
+      .sidebar2{
+        grid-area: sd2;  
+      }
       .footer{
         grid-area: ft;  
         display: grid;
@@ -88,7 +95,7 @@
         grid-template-rows: 100px 900px 100px;
         grid-template-areas: 
         "hd hd hd hd hd hd hd hd"
-        "sd main main main main main main main"
+        "sd main main main main main main sd2"
         "ft ft ft ft ft ft ft ft";
         border: 2px solid yellow;
         font-size: 1em;
@@ -115,7 +122,11 @@
         display: grid;
         grid-template-columns: 50% 50%;
       }
-    
+
+      .sidebar2{
+        grid-area: sd2;  
+      }
+
       .footer{
         grid-area: ft;  
         display: grid;
