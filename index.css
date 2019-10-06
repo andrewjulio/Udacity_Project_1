@@ -1,16 +1,14 @@
 .container{
-    /* Step 1: Set display to grid */
       display:grid;
-   /* Step 2: setup rows amd columns */
       grid-template-columns: 100%;
-      grid-template-rows: 20% 20% 40% 20%;
+      grid-template-rows: 200px 200px 900px 200px;
       grid-template-areas: 
       "hd hd hd hd hd hd hd hd"
       "sd sd sd sd sd sd sd sd"
       "main main main main main main main main"
       "ft ft ft ft ft ft ft ft";
       border: 2px solid yellow;
-      font-size: 0.7em;
+      font-size: 1em;
   }
 
   .box{
@@ -34,13 +32,28 @@
   }
 
   /*.front-end{
-      grid-area: fe;
+
   }
 
-  .full-styack{
-      grid-area: fs;
+  .full-stack{
+
   }*/
 
   .footer{
     grid-area: ft;  
+  }
+
+
+
+  @media (min-width: 600px) and (max-width:900px) {
+    .container {
+      // rules for medium-sized screen
+    }
+  }
+  
+  /* Large Screens */
+  @media (min-width:901px) {
+    .container {
+      // rules for large screen
+    }
   }
