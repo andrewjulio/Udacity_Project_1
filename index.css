@@ -65,6 +65,8 @@
         grid-area:hd;
         display: grid;
         grid-template-columns: 30% 10% 10% 10% 10% 30%;
+        background: #000000;
+        color: #e6ffff;
       }
     
       .sidebar{
@@ -84,6 +86,8 @@
         grid-area: ft;  
         display: grid;
         grid-template-columns: 30% 10% 10% 10% 10% 30%;
+        background: #000000;
+        color: #e6ffff;
       }
 
       .logo{
@@ -99,6 +103,24 @@
 
       .end{
           text-align: center;
+      }
+
+      a:link {
+        text-decoration: none;
+        color: #e6ffff;
+      }
+      
+      a:visited {
+        text-decoration: none;
+        color: #e6ffff;
+      }
+      
+      a:hover {
+        color: #ffeecc;
+      }
+      
+      a:active {
+        text-decoration: none;
       }
   }
   
@@ -119,13 +141,15 @@
     .box{
         width: 100%;
         border: 1px solid red;
-        background: #F8FA9D;
+        /*background: #F8FA9D;*/
       }
     
       .nav{
         grid-area:hd;
         display: grid;
         grid-template-columns: 30% 10% 10% 10% 10% 30%;
+        background: #000000;
+        color: #e6ffff;
       }
     
       .sidebar{
@@ -146,6 +170,8 @@
         grid-area: ft;  
         display: grid;
         grid-template-columns: 30% 10% 10% 10% 10% 30%;
+        background: #000000;
+        color: #e6ffff;
       }
 
       .logo{
@@ -162,4 +188,22 @@
     .end{
         text-align: center;
     }
+
+    a:link {
+        text-decoration: none;
+        color: #e6ffff;
+      }
+      
+      a:visited {
+        text-decoration: none;
+        color: #e6ffff;
+      }
+      
+      a:hover {
+        color: #ffeecc;
+      }
+      
+      a:active {
+        text-decoration: none;
+      }
   }
