@@ -1,3 +1,7 @@
+/*body{
+    font-family: 'Mansalva', cursive;
+}*/
+
 @media (max-width:599px){
     .container{
         display:grid;
@@ -9,7 +13,7 @@
         "sd sd sd sd sd sd sd sd"
         "main main main main main main main main"
         "ft ft ft ft ft ft ft ft";
-        border: 2px solid yellow;
+        /*border: 2px solid yellow;*/
         font-size: 0.8em;
     }
 
@@ -58,7 +62,7 @@
         "pic pic pic pic pic pic pic pic"
         "sd sd main main main main sd2 sd2"
         "ft ft ft ft ft ft ft ft";
-        border: 2px solid yellow;
+        /*border: 2px solid yellow;*/
         font-size: 0.7em;
     }
 
@@ -146,14 +150,15 @@
     .container{
         display:grid;
         grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: 80px 480px 480px 80px;
+        grid-template-rows: 80px 480px 10px 480px 80px;
         grid-template-areas: 
         "hd hd hd hd hd hd hd hd"
         "pic pic pic pic pic pic pic pic"
+        "hr hr hr hr hr hr hr hr"
         "sd sd main main main main sd2 sd2"
         "ft ft ft ft ft ft ft ft";
-        border: 2px solid yellow;
-        font-size: 1em;
+        /*border: 2px solid yellow;*/
+        font-size: 0.8em;
     }
 
     .box{
@@ -165,7 +170,7 @@
       .nav{
         grid-area:hd;
         display: grid;
-        grid-template-columns: 30% 10% 10% 10% 10% 30%;
+        grid-template-columns: 35% 7.5% 7.5% 7.5% 7.5% 35%;
         background: #000000;
         color: #e6ffff;
       }
@@ -173,22 +178,48 @@
       .artwork{
           grid-area: pic;
           display: grid;
-          place-items: center;
-          justify-content: center;
+          grid-template-columns: repeat(3, 1fr);
       }
+
+      .main-pic{
+          display:grid;
+          justify-content: center;
+          place-items: center;
+      }
+
+      .right-pic{
+        display:grid;
+        justify-content: left;
+        place-items: center;
+    }
+
+      .left-pic{
+        display:grid;
+        justify-content: right;
+        place-items: center;
+    }
     
+      .border {
+        grid-area: hr;
+        height: 10px;
+        border: 0;
+        box-shadow: 0 10px 10px -10px #855454 inset;
+    }
       .sidebar{
         grid-area: sd;  
+        background: #e8e1e1;
       }
     
       .content {
         grid-area: main;
         display: grid;
         grid-template-columns: 50% 50%;
+        background: #e8e1e1;
       }
 
       .sidebar2{
-        grid-area: sd2;  
+        grid-area: sd2;
+        background: #e8e1e1;  
       }
 
       .footer{
@@ -204,7 +235,6 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 50%;
       }
 
       .navbar{
