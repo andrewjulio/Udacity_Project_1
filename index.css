@@ -25,11 +25,12 @@
 
     .nav{
         grid-area:hd;
+        background: #000000;
+        color: #e6ffff;
     }
 
     .artwork{
-        grid-area: pic;
-        align-items: center;
+        display: none; 
       }
 
     .sidebar{
@@ -47,7 +48,9 @@
       }
 
     .footer{
-        grid-area: ft;  
+        grid-area: ft;
+        background: #000000;
+        color: #e6ffff;  
     }
    }
 
