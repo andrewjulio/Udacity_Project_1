@@ -2,9 +2,10 @@
     .container{
         display:grid;
         grid-template-columns: 100%;
-        grid-template-rows: 200px 200px 900px 200px;
+        grid-template-rows: 150px 150px 200px 900px 200px;
         grid-template-areas: 
         "hd hd hd hd hd hd hd hd"
+        "pic pic pic pic pic pic pic pic"
         "sd sd sd sd sd sd sd sd"
         "main main main main main main main main"
         "ft ft ft ft ft ft ft ft";
@@ -21,6 +22,11 @@
     .nav{
         grid-area:hd;
     }
+
+    .artwork{
+        grid-area: pic;
+        align-items: center;
+      }
 
     .sidebar{
         grid-area: sd;  
@@ -46,10 +52,11 @@
     .container{
         display:grid;
         grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: 80px 860px 80px;
+        grid-template-rows: 80px 480px 480px 80px;
         grid-template-areas: 
         "hd hd hd hd hd hd hd hd"
-        "sd sd main main main main main sd2"
+        "pic pic pic pic pic pic pic pic"
+        "sd sd main main main main sd2 sd2"
         "ft ft ft ft ft ft ft ft";
         border: 2px solid yellow;
         font-size: 0.7em;
@@ -69,6 +76,14 @@
         color: #e6ffff;
       }
     
+      .artwork{
+        grid-area: pic;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+  
       .sidebar{
         grid-area: sd;  
       }
@@ -134,10 +149,11 @@
     .container{
         display:grid;
         grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: 80px 860px 80px;
+        grid-template-rows: 80px 480px 480px 80px;
         grid-template-areas: 
         "hd hd hd hd hd hd hd hd"
-        "sd main main main main main main sd2"
+        "pic pic pic pic pic pic pic pic"
+        "sd sd main main main main sd2 sd2"
         "ft ft ft ft ft ft ft ft";
         border: 2px solid yellow;
         font-size: 1em;
@@ -155,6 +171,14 @@
         grid-template-columns: 30% 10% 10% 10% 10% 30%;
         background: #000000;
         color: #e6ffff;
+      }
+
+      .artwork{
+          grid-area: pic;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 50%;
       }
     
       .sidebar{
