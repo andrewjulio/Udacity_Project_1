@@ -78,10 +78,7 @@
     
       .artwork{
         grid-area: pic;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
+        object-fit: contain;
       }
   
       .sidebar{
@@ -175,10 +172,9 @@
 
       .artwork{
           grid-area: pic;
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-          width: 50%;
+          display: grid;
+          place-items: center;
+          justify-content: center;
       }
     
       .sidebar{
