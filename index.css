@@ -1,4 +1,4 @@
-@media (max-width:600px) {
+@media (max-width: 600px) {
     .large-container{
         display: grid;
         grid-template-columns: 1% 98% 1%;
@@ -69,10 +69,10 @@
     
     .content{
         grid-area: main;
-    
         display: grid;
         grid-template-rows: 50% 50%;
         background: #fafafa;
+        padding: 5px;
     }
     
     .border{
@@ -119,10 +119,11 @@
     }
 }
 
-@media (min-width:601px) and (max-width:999px) {
+/* Medium Screens */
+@media (min-width: 601px) and (max-width: 999px) {
     .large-container{
         display: grid;
-        grid-template-columns: 10% 80% 10%;
+        grid-template-columns: 2% 96% 2%;
         grid-template-rows: 100%;
         grid-template-areas: "ls centre rs";
     }
@@ -145,26 +146,20 @@
         grid-area: centre;
         display: grid;
         grid-template-columns: repeat(8, 12.5%);
-        grid-template-rows: 300px 300px 10px 500px 300px 300px 300px;
+        grid-template-rows: 30px 450px 10px 450px 30px;
         grid-template-areas: 
         "hd hd hd hd hd hd hd hd"
-        "pic pic pic pic pic pic pic pic"
+        "hi hi hi hi sd sd sd sd"
         "hr hr hr hr hr hr hr hr"
-        "sd sd sd sd sd sd sd sd"
         "main main main main main main main main"
-        "sd2 sd2 sd2 sd2 sd2 sd2 sd2 sd2"
         "ft ft ft ft ft ft ft ft";
         font-family: "Poppins";
     }
     
-    .footer{
-        grid-area: ft; 
-    }
-    
     .footer, .nav{
         display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 25% 15% 15% 15% 15% 15%;
+        grid-template-columns: 25% 12.5% 12.5% 12.5% 12.5% 25%;
+        grid-template-rows: 100%;
         background: #000000;
         color: #e6ffff;
         align-items: center;
@@ -172,6 +167,13 @@
         font-weight: normal;
         grid-gap: 1px;
         font-size: 0.8em;
+    }
+
+    .footer{
+        grid-area: ft;
+        display: grid;
+        grid-template-columns: 25% 12.5% 12.5% 12.5% 12.5% 25%;
+        grid-template-rows: 100%;
     }
     
     .navbar{
@@ -184,61 +186,46 @@
         justify-content: center;
     }
     
-    .sidebar{
-        grid-area: sd; 
-    
-        background: #fafafa;
+    .welcome{
+        grid-area: hi;
+        background: white;
     }
-    
-    .sidebar2{
-        grid-area: sd2; 
-        
+  
+    .content{
         background: #fafafa;
+        padding: 5px;
+    }
+  
+    .sidebar{
+      grid-area: sd; 
+      background: white;
     }
     
     .content{
         grid-area: main;
-    
         display: grid;
         grid-template-columns: 50% 50%;
-        background: #fafafa;
     }
     
     .border{
         grid-area: hr;
     }
     
-    .artwork{
-        grid-area: pic;
-    
-        background-image: url("moi.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    
     .nav{
         grid-area: hd;
+        background-image: url("moi-black.jpg");
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: contain;
     }
     
     .logo{
         font-family: "Iceland";
-        font-size: 5em;
+        font-size: 2em;
         text-align: left;
         padding-left: 10px;
     }
     
-    .end{
-        text-align: right;
-        padding-right: 10px;
-    }
-    
-    .beg{
-        text-align: left;
-        padding-left: 10px;
-    }
     .box{
         width: 100%;
         border: 1px solid red;
@@ -265,10 +252,10 @@
 }
 
 /* Large Screens */
-@media (min-width:901px) {
+@media (min-width: 1000px) {
   .large-container{
       display: grid;
-      grid-template-columns: 10% 80% 10%;
+      grid-template-columns: 2% 96% 2%;
       grid-template-rows: 100%;
       grid-template-areas: "ls centre rs";
   }
@@ -294,9 +281,9 @@
       grid-template-rows: 80px 480px 10px 480px 80px;
       grid-template-areas: 
       "hd hd hd hd hd hd hd hd"
-      "pic pic pic pic pic pic pic pic"
+      "hi hi hi hi sd sd sd sd"
       "hr hr hr hr hr hr hr hr"
-      "sd sd main main main main sd2 sd2"
+      "main main main main main main main main"
       "ft ft ft ft ft ft ft ft";
       font-family: "Poppins";
   }
@@ -323,9 +310,8 @@
   #contact{
     text-align: right;
     padding-right:10px;
-}
+  }
 
-  
   .navbar{
       text-align: center;
   }
@@ -333,19 +319,20 @@
   #langs{
     display: flex;
     flex-direction: row-reverse;
-    padding-right: 10px;
+    justify-content: center;
   }
 
-  .sidebar, .sidebar2, .content{
+  .welcome{
+      grid-area: hi;
+      background: white;
+  }
+
+  .sidebar, .content{
       background: #fafafa;
   }
 
   .sidebar{
     grid-area: sd; 
-  }
-  
-  .sidebar2{
-      grid-area: sd2; 
   }
   
   .content{
@@ -357,19 +344,14 @@
   .border{
       grid-area: hr;
   }
-
-  .artwork{
-      grid-area: pic;
-      background-image: url("moi.jpg");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
-      display: flex;
-      flex-direction: column-reverse;
-  }
   
   .nav{
       grid-area: hd;
+      grid-area: hd;
+      background-image: url("moi-black.jpg");
+      background-position: right;
+      background-repeat: no-repeat;
+      background-size: contain;
   }
   
   .logo{
