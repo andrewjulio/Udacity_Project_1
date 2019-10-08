@@ -25,7 +25,7 @@
         grid-area: centre;
         display: grid;
         grid-template-columns: repeat(8, 12.5%);
-        grid-template-rows: 300px 250px 80px 5px 480px 480px 300px 80px;
+        grid-template-rows: 300px 250px 10px 300px 500px 300px 300px;
         grid-template-areas: 
         "hd hd hd hd hd hd hd hd"
         "pic pic pic pic pic pic pic pic"
