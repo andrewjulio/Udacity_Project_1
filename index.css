@@ -1,273 +1,149 @@
-/*body{
-    font-family: 'Mansalva', cursive;
-}*/
 
-@media (max-width:599px){
-    .container{
-        display:grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 150px 150px 200px 900px 200px;
-        grid-template-areas: 
-        "hd hd hd hd hd hd hd hd"
-        "pic pic pic pic pic pic pic pic"
-        "sd sd sd sd sd sd sd sd"
-        "main main main main main main main main"
-        "ft ft ft ft ft ft ft ft";
-        /*border: 2px solid yellow;*/
-        font-size: 0.8em;
-    }
-
-    .box{
-        width: 100%;
-        border: 1px solid red;
-        background: #F8FA9D;
-    }
-
-    .nav{
-        grid-area:hd;
-        background: #000000;
-        color: #e6ffff;
-    }
-
-    .artwork{
-        display: none; 
-      }
-
-    .sidebar{
-        grid-area: sd;  
-    }
-
-    .content {
-        grid-area: main;
-        display: grid;
-        grid-template-rows: 50% 50%;
-    }
-
-    .sidebar2{
-        display: none;  
-      }
-
-    .footer{
-        grid-area: ft;
-        background: #000000;
-        color: #e6ffff;  
-    }
-   }
-
-/* Medium Screens */
-  @media (min-width: 600px) and (max-width:900px) {
-    .container{
-        display:grid;
-        grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: 80px 480px 480px 80px;
-        grid-template-areas: 
-        "hd hd hd hd hd hd hd hd"
-        "pic pic pic pic pic pic pic pic"
-        "sd sd main main main main sd2 sd2"
-        "ft ft ft ft ft ft ft ft";
-        /*border: 2px solid yellow;*/
-        font-size: 0.7em;
-    }
-
-    .box{
-        width: 100%;
-        border: 1px solid red;
-        background: #F8FA9D;
-      }
-    
-      .nav{
-        grid-area:hd;
-        display: grid;
-        grid-template-columns: 30% 10% 10% 10% 10% 30%;
-        background: #000000;
-        color: #e6ffff;
-      }
-    
-      .artwork{
-        grid-area: pic;
-        object-fit: contain;
-      }
-  
-      .sidebar{
-        grid-area: sd;  
-      }
-    
-      .content {
-        grid-area: main;
-        display: grid;
-        grid-template-columns: 50% 50%;
-      }
-
-      .sidebar2{
-        grid-area: sd2;  
-      }
-      .footer{
-        grid-area: ft;  
-        display: grid;
-        grid-template-columns: 30% 10% 10% 10% 10% 30%;
-        background: #000000;
-        color: #e6ffff;
-        align-items: center;
-      }
-
-      .logo{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-    }
-    
-      .navbar{
-          text-align: center;
-      }
-
-      .end{
-          text-align: center;
-      }
-
-      a:link {
-        text-decoration: none;
-        color: #e6ffff;
-      }
-      
-      a:visited {
-        text-decoration: none;
-        color: #e6ffff;
-      }
-      
-      a:hover {
-        color: #8c8c8c;
-      }
-      
-      a:active {
-        text-decoration: none;
-      }
-      .nav {
-          font-size: 1.2em;
-          align-items: center;
-      }
-  }
-  
   /* Large Screens */
   @media (min-width:901px) {
-    .container{
-        display:grid;
-        grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: 80px 480px 10px 480px 80px;
-        grid-template-areas: 
-        "hd hd hd hd hd hd hd hd"
-        "pic pic pic pic pic pic pic pic"
-        "hr hr hr hr hr hr hr hr"
-        "sd sd main main main main sd2 sd2"
-        "ft ft ft ft ft ft ft ft";
-        /*border: 2px solid yellow;*/
-        font-size: 0.8em;
-    }
-
-    .box{
-        width: 100%;
-        border: 1px solid red;
-        /*background: #F8FA9D;*/
-      }
-    
-      .nav{
-        grid-area:hd;
-        display: grid;
-        grid-template-columns: 35% 7.5% 7.5% 7.5% 7.5% 35%;
-        background: #000000;
-        color: #e6ffff;
-      }
-
-      .artwork{
-          grid-area: pic;
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-      }
-
-      .main-pic{
-          display:grid;
-          justify-content: center;
-          place-items: center;
-      }
-
-      .right-pic{
-        display:grid;
-        justify-content: left;
-        place-items: center;
-    }
-
-      .left-pic{
-        display:grid;
-        justify-content: right;
-        place-items: center;
-    }
-    
-      .border {
-        grid-area: hr;
-        height: 10px;
-        border: 0;
-        box-shadow: 0 10px 10px -10px #855454 inset;
-    }
-      .sidebar{
-        grid-area: sd;  
-        background: #e8e1e1;
-      }
-    
-      .content {
-        grid-area: main;
-        display: grid;
-        grid-template-columns: 50% 50%;
-        background: #e8e1e1;
-      }
-
-      .sidebar2{
-        grid-area: sd2;
-        background: #e8e1e1;  
-      }
-
-      .footer{
-        grid-area: ft;  
-        display: grid;
-        grid-template-columns: 30% 10% 10% 10% 10% 30%;
-        background: #000000;
-        color: #e6ffff;
-        align-items: center;
-      }
-
-      .logo{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      .navbar{
-        text-align: center;
-    }
-
-    .end{
-        text-align: center;
-    }
-
-    .nav {
-        font-size: 1.3em;
-        align-items: center;
-    }
-
-    a:link {
-        text-decoration: none;
-        color: #e6ffff;
-      }
+  .large-container{
+      border: 2px solid green;
+      display: grid;
+      grid-template-columns: 20% 60% 20%;
+      grid-template-rows: 100%;
+      grid-template-areas: "ls centre rs";
+  }
+  
+  .lspace{
+      grid-area: ls;
+  }
+  
+  .rspace{
+      grid-area: rs;
+  }
+  
+  .logo{
+      font-family: "Iceland";
+      font-size: 5em;
+      text-align: left;
+      padding-left: 10px;
+  }
+  .container{
+      grid-area: centre;
+      display: grid;
+      grid-template-columns: repeat(8, 12.5%);
+      grid-template-rows: 80px 480px 120px 10px 480px 80px;
+      grid-template-areas: 
+      "hd hd hd hd hd hd hd hd"
+      "pic pic pic pic pic pic pic pic"
+      "title title title title title title title title"
+      "hr hr hr hr hr hr hr hr"
+      "sd sd main main main main sd2 sd2"
+      "ft ft ft ft ft ft ft ft";
+      font-family: "Poppins";
+  }
+  
+  .footer{
+      grid-area: ft; 
+  }
+  
+  .footer, .nav{
+      display: grid;
+      grid-template-columns: 25% 12.5% 12.5% 12.5% 12.5% 25%;
+      grid-template-rows: 100%;
+      background: #000000;
+      color: #e6ffff;
+      align-items: center;
+      font-weight: normal;
+  }
+  
+  .navbar{
+      text-align: center;
+  }
+  
+  .sidebar{
+      grid-area: sd; 
+  
+      background: #fafafa;
+  }
+  
+  .sidebar2{
+      grid-area: sd2; 
       
-      a:visited {
-        text-decoration: none;
-        color: #e6ffff;
-      }
+      background: #fafafa;
+  }
+  
+  .content{
+      grid-area: main;
+  
+      display: grid;
+      grid-template-columns: 50% 50%;
+      background: #fafafa;
+  }
+  
+  .border{
+      grid-area: hr;
+  }
+  
+  .title{
+      grid-area: title;
       
-      a:hover {
-        color: #8c8c8c;
-      }
-      
-      a:active {
-        text-decoration: none;
-      }
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 100%;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: black;
+      font-family: "Iceland";
+      font-size: 4.5em;
+  }
+  .artwork{
+      grid-area: pic;
+  
+      background-image: url("moi.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      display: flex;
+      flex-direction: column-reverse;
+  }
+  
+  .nav{
+      grid-area: hd;
+  }
+  
+  .logo{
+      font-family: "Iceland";
+      font-size: 5em;
+      text-align: left;
+      padding-left: 10px;
+  }
+  
+  .end{
+      text-align: right;
+      padding-right: 10px;
+  }
+  
+  .beg{
+      text-align: left;
+      padding-left: 10px;
+  }
+  .box{
+      width: 100%;
+      border: 1px solid red;
+      background: rgb(124, 124, 82);
+  }
+  
+  a:link {
+      text-decoration: none;
+      color: #e6ffff;
+    }
+    
+  a:visited {
+      text-decoration: none;
+      color: #e6ffff;
+  }
+  
+  a:hover {
+      color: #8c8c8c;
+  }
+  
+  a:active {
+      text-decoration: none;
   }

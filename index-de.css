@@ -1,0 +1,146 @@
+.large-container{
+    border: 2px solid green;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 100%;
+    grid-template-areas: "ls centre rs";
+}
+
+.lspace{
+    grid-area: ls;
+}
+
+.rspace{
+    grid-area: rs;
+}
+
+.logo{
+    font-family: "Iceland";
+    font-size: 5em;
+    text-align: left;
+    padding-left: 10px;
+}
+.container{
+    grid-area: centre;
+    display: grid;
+    grid-template-columns: repeat(8, 12.5%);
+    grid-template-rows: 80px 480px 120px 10px 480px 80px;
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd hd"
+    "pic pic pic pic pic pic pic pic"
+    "title title title title title title title title"
+    "hr hr hr hr hr hr hr hr"
+    "sd sd main main main main sd2 sd2"
+    "ft ft ft ft ft ft ft ft";
+    font-family: "Poppins";
+}
+
+.footer{
+    grid-area: ft; 
+}
+
+.footer, .nav{
+    display: grid;
+    grid-template-columns: 25% 12.5% 12.5% 12.5% 12.5% 25%;
+    grid-template-rows: 100%;
+    background: #000000;
+    color: #e6ffff;
+    align-items: center;
+    font-weight: normal;
+}
+
+.navbar{
+    text-align: center;
+}
+
+.sidebar{
+    grid-area: sd; 
+
+    background: #fafafa;
+}
+
+.sidebar2{
+    grid-area: sd2; 
+    
+    background: #fafafa;
+}
+
+.content{
+    grid-area: main;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background: #fafafa;
+}
+
+.border{
+    grid-area: hr;
+}
+
+.title{
+    grid-area: title;
+    
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    font-family: "Iceland";
+    font-size: 4.5em;
+}
+.artwork{
+    grid-area: pic;
+
+    background-image: url("moi.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.nav{
+    grid-area: hd;
+}
+
+.logo{
+    font-family: "Iceland";
+    font-size: 5em;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.end{
+    text-align: right;
+    padding-right: 10px;
+}
+
+.beg{
+    text-align: left;
+    padding-left: 10px;
+}
+.box{
+    width: 100%;
+    border: 1px solid red;
+    background: rgb(124, 124, 82);
+}
+
+a:link {
+    text-decoration: none;
+    color: #e6ffff;
+  }
+  
+a:visited {
+    text-decoration: none;
+    color: #e6ffff;
+}
+
+a:hover {
+    color: #8c8c8c;
+}
+
+a:active {
+    text-decoration: none;
+}
