@@ -16,19 +16,17 @@
     
     .logo{
         font-family: "Iceland";
-        font-size: 3.5em;
+        font-size: 5em;
         text-align: left;
-        padding-left: 10px;
     }
 
     .container{
         grid-area: centre;
         display: grid;
         grid-template-columns: repeat(8, 12.5%);
-        grid-template-rows: 300px 250px 10px 300px 500px 300px 300px;
+        grid-template-rows: 300px 10px 300px 500px 300px 300px;
         grid-template-areas: 
         "hd hd hd hd hd hd hd hd"
-        "pic pic pic pic pic pic pic pic"
         "hr hr hr hr hr hr hr hr"
         "sd sd sd sd sd sd sd sd"
         "main main main main main main main main"
@@ -41,33 +39,31 @@
         grid-area: ft; 
     }
     
-    .footer, .nav{
+    .footer, .nav, .end{
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 25% 15% 15% 15% 15% 15%;
         background: #000000;
         color: #e6ffff;
         align-items: center;
-        justify-content: center;
-        text-align: center;
+        text-align: left;
+        padding-left: 5px;
         font-weight: normal;
         grid-gap: 1px;
+        font-size: 0.8em;
     }
     
-    .navbar{
+    .footer{
         text-align: center;
-        font-size: 0.7em;
     }
     
     .sidebar{
         grid-area: sd; 
-    
         background: #fafafa;
     }
     
     .sidebar2{
         grid-area: sd2; 
-        
         background: #fafafa;
     }
     
@@ -82,39 +78,22 @@
     .border{
         grid-area: hr;
     }
-    
-    .artwork{
-        grid-area: pic;
-    
-        background-image: url("moi.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        display: flex;
-        flex-direction: column-reverse;
-    }
 
     .nav{
         grid-area: hd;
+        background-image: url("moi-black.jpg");
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    #langs{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+
     }
     
-    .logo{
-        font-family: "Iceland";
-        font-size: 5em;
-        text-align: center;
-    }
-    
-    .end{
-        text-align: center;
-        font-size: 0.7em;
-        padding: 5px;
-    }
-    
-    .beg{
-        text-align: left;
-        font-size: 0.7em;
-        padding: 5px;
-    }
     .box{
         width: 100%;
         border: 1px solid red;
@@ -140,7 +119,7 @@
     }
 }
 
-@media (min-width:601px) and (max-width:900px) {
+@media (min-width:601px) and (max-width:999px) {
     .large-container{
         display: grid;
         grid-template-columns: 10% 80% 10%;
@@ -275,7 +254,7 @@
 }
 
 /* Large Screens */
-@media (min-width:901px) {
+@media (min-width:1000px) {
   .large-container{
       display: grid;
       grid-template-columns: 10% 80% 10%;
@@ -324,29 +303,44 @@
       align-items: center;
       font-weight: normal;
   }
+
+  #copyright{
+      text-align: left;
+      padding-left:10px;
+  }
+
+  #contact{
+    text-align: right;
+    padding-right:10px;
+}
+
   
   .navbar{
       text-align: center;
   }
   
-  .sidebar{
-      grid-area: sd; 
-  
+  #langs{
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 10px;
+  }
+
+  .sidebar, .sidebar2, .content{
       background: #fafafa;
+  }
+
+  .sidebar{
+    grid-area: sd; 
   }
   
   .sidebar2{
       grid-area: sd2; 
-      
-      background: #fafafa;
   }
   
   .content{
       grid-area: main;
-  
       display: grid;
       grid-template-columns: 50% 50%;
-      background: #fafafa;
   }
   
   .border{
@@ -355,7 +349,6 @@
 
   .artwork{
       grid-area: pic;
-  
       background-image: url("moi.jpg");
       background-position: center;
       background-repeat: no-repeat;
@@ -374,16 +367,7 @@
       text-align: left;
       padding-left: 10px;
   }
-  
-  .end{
-      text-align: right;
-      padding-right: 10px;
-  }
-  
-  .beg{
-      text-align: left;
-      padding-left: 10px;
-  }
+
   .box{
       width: 100%;
       border: 1px solid red;
@@ -407,3 +391,4 @@
   a:active {
       text-decoration: none;
   }
+}
